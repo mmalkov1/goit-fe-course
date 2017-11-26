@@ -1,0 +1,38 @@
+body {
+	font-family: "Pathway Gothic One";
+	color: #263555;
+	background-image: url("Z:/home/goit/goit-fe-course/html-css/module-3/img/page-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.wrapper {
+	box-sizing: border-box;
+	width: 480px;
+	margin: 240px auto 542px auto ;
+	padding: 60px 38px 45px 38px;
+	background-color: #fff;
+}
+.title {
+	display: inline-block;
+	margin-top: 50px;
+}
+ol>li {
+	list-style-type: none;
+}
+ol {
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 115px;
+}
+
+ul>li {
+	display: inline-block;
+	width: 170px; /*480px-wrapper padding 76px = 404px - list__offer 60px = 344px*/
+}
+.list__offer {
+	padding-left: 60px;
+	padding-right: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
