@@ -1,11 +1,19 @@
 body {
-	font-family: "Pathway Gothic One";
-	color: #263555;
-	background-image: url("img/page-bg.png");
+	font-family: "Arial";
+	color: #2f3855;
+	background-image: url("../img/page-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	
+	font-size: 12px;
+	line-height: 1.417;
 }
+h1 {
+	font-family: "Pathway Gothic One";
+}
+p {
+	color: #505151;
+}
+
 .wrapper {
 	box-sizing: border-box;
 	width: 480px;
@@ -29,6 +37,8 @@ ol {
 ul>li {
 	display: inline-block;
 	width: 170px; /*480px-wrapper padding 76px = 404px - list__offer 60px = 344px*/
+	font-weight: bold;
+	padding-top: 20px;
 }
 .list__offer {
 	padding-left: 60px;
