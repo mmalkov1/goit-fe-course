@@ -86,30 +86,18 @@ ol > li:before {
 	position: absolute;
 	top: 0px;
 	left: -35px;
-}
-.list-num-1:after {
-	content: "1";
-	position: absolute;
+	line-height: 28px;
+	text-align: center;
 	color: #fff;
-	top: 6px;
-	left: -25px;
-	font-size: 13px;
 }
-.list-num-2:after {
-	content: "2";
-	position: absolute;
-	color: #fff;
-	top: 6px;
-	left: -25px;
-	font-size: 13px;
+.list-num-1:before {
+	content: "1"
 }
-.list-num-3:after {
-	content: "3";
-	position: absolute;
-	color: #fff;
-	top: 6px;
-	left: -25px;
-	font-size: 13px;
+.list-num-2:before {
+	content: "2"
+}
+.list-num-3:before {
+	content: "3"
 }
 hr {
 	margin: 55px 0px 60px;
@@ -167,6 +155,13 @@ ul>li:before {
 	bottom: -40px;
 	border-top: 30px solid #fcfafa;
 }
+.guote_text:before {
+	content: "\201C";
+}
+.guote_text:after {
+	content: "\201D";
+}
+
 .author {
 	margin-top: 55px;
 	text-align: center;
