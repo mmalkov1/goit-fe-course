@@ -1,6 +1,6 @@
 body {
 	background-image: url(../img/bg.jpg);
-	font-family: "Arial Regular";
+	font-family: "Arial Regular", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 
@@ -9,13 +9,13 @@ body {
 	width: 1026px;
 	height: 1298px;
 	background-color: #fff;
-	margin: 230px auto 268px auto;
+	margin: 230px auto 268px;
 	box-sizing: border-box;
 
 }
 .wrapper-content {
 	width: 904px;
-	padding: 118px 0px 0px 0px;
+	padding-top: 118px;
 	margin: auto;
 }
 .main-content,
@@ -35,14 +35,15 @@ body {
 h1,
 h2 {
 	font-family: "Pathway Gothic One";
-	margin: 0px 0px 50px;
+	margin-bottom: 50px;
 	padding: 0px;
+	margin-top: 0px;
 }
 h2 {
 	font-size: 26px;
 }
 h3 {
-	padding: 0px 0px 16px 0px;
+	padding-bottom: 16px;
 	margin: 0px;
 }
 img {
@@ -65,11 +66,16 @@ p {
 	vertical-align: top;
 	
 }
+.top-content {
+	padding-bottom: 55px;
+	margin-bottom: 60px;
+	border-bottom: 1px solid #eee;
+}
 ol {
 	margin: 0px;
 }
 li {
-	margin: 0px 0px 24px 0px;
+	margin-bottom: 24px;
 	list-style: none;
 	position: relative;
 }
@@ -132,24 +138,20 @@ ul>li:before {
 }
 .quote {
 	background: #fcfafa;
-    padding: 24px;
-    position: relative;
-    box-sizing: border-box;
-    border: 2px solid #dfdcdc;
-    border-radius: 3px;
-
-
+	padding: 24px;
+	position: relative;
+	box-sizing: border-box;
+	border: 2px solid #dfdcdc;
+	border-radius: 3px;
 }
 .quote:after,
 .quote:before {
 	content: ''; 
-    position: absolute;
-    left: 92px;
-    bottom: -45px;
-    border: 15px solid transparent;
-    border-top: 30px solid #dfdcdc;
-
-
+	position: absolute;
+	left: 92px;
+	bottom: -45px;
+	border: 15px solid transparent;
+	border-top: 30px solid #dfdcdc;
 }
 .quote:after {
 	bottom: -40px;
