@@ -1,6 +1,6 @@
 body {
 	background-image: url(../img/bg.jpg);
-	font-family: "Arial Regular", sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 
@@ -10,31 +10,35 @@ body {
 	height: 1298px;
 	background-color: #fff;
 	margin: 230px auto 268px;
-	box-sizing: border-box;
+	padding-bottom: 30px;
+	box-sizing: content-box;
+
 
 }
 .wrapper-content {
 	width: 904px;
 	padding-top: 118px;
-	margin: auto;
+	margin: 0px auto 55px;
 }
 .main-content,
 .sidebar {
 	display: inline-block;
 }
 .main-content {
-	width: 690px;
+	width: 685px;
 	box-sizing: border-box;
 }
 
 .sidebar {
-	width: 210px;
+	width: 215px;
 	box-sizing: border-box;
 	vertical-align: top;
 }
 h1,
 h2 {
 	font-family: "Pathway Gothic One";
+	font-weight: normal;
+	color: #263555;
 	margin-bottom: 50px;
 	padding: 0px;
 	margin-top: 0px;
@@ -43,8 +47,11 @@ h2 {
 	font-size: 26px;
 }
 h3 {
+	font-size: 15px;
+	font-weight: normal;
 	padding-bottom: 16px;
 	margin: 0px;
+	color: #263555;
 }
 img {
 	display: inline-block;
@@ -66,24 +73,33 @@ p {
 	vertical-align: top;
 	
 }
+p.text-3 {
+	display: inline-block;
+	width: 650px;
+}
 .top-content {
 	padding-bottom: 55px;
 	margin-bottom: 60px;
 	border-bottom: 1px solid #eee;
 }
+.title-offer {
+	margin-bottom: 65px;
+}
 ol {
 	margin: 0px;
+	counter-reset: list;
 }
 li {
 	margin-bottom: 24px;
 	list-style: none;
 	position: relative;
+	counter-increment: list;
 }
 li:last-child {
 	margin: 0px;
 }
 ol > li:before {
-	content: "";
+	content: counter(list);
 	width: 28px;
 	height: 28px;
 	border: 1px solid #4a94b5;
@@ -96,15 +112,7 @@ ol > li:before {
 	text-align: center;
 	color: #fff;
 }
-.list-num-1:before {
-	content: "1"
-}
-.list-num-2:before {
-	content: "2"
-}
-.list-num-3:before {
-	content: "3"
-}
+
 hr {
 	margin: 55px 0px 60px;
 	padding: 0px;
@@ -115,6 +123,7 @@ p.text-1 {
 ul {
 	margin-left: 25px;
 	padding-left: 0px;
+	color: #263555;
 }
 ul>li {
 	width: 50%;
@@ -138,7 +147,8 @@ ul>li:before {
 }
 .quote {
 	background: #fcfafa;
-	padding: 24px;
+	color: #263555;
+	padding: 18px 27px;
 	position: relative;
 	box-sizing: border-box;
 	border: 2px solid #dfdcdc;
@@ -172,6 +182,7 @@ ul>li:before {
 	display: inline-block;
 	font-size: 16px;
 	margin-bottom: 22px;
+	color: #263555;
 }
 
 
