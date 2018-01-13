@@ -1,0 +1,264 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url(../img/bg-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+h1,
+h2 {
+	padding: 0px;
+	margin: 0px;
+	font-size: inherit;
+	font-weight: inherit;
+}
+.wrapper {
+	width: 1024px;
+	margin: auto;
+	padding: 0px;
+}
+header {
+	margin-bottom: 15px;
+	padding: 0px 60px;
+}
+.menu {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 28px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	min-height: 235px;
+	margin: 0px;
+	padding: 0px;
+}
+.menu-item {
+	transition: all 0.2s linear;
+	cursor: pointer;
+}
+.menu-item:nth-child(4) {
+	position: relative;
+	font-family: 'Dorsa',sans-serif;
+	font-size: 60px;
+	color: #263555;
+
+}
+.menu-item:nth-child(4):after {
+	content: '';
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+.menu-item:hover {
+	color: #263555;
+	
+}
+.submenu {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	color: #6b7488;
+	font-size: 20px;
+	text-transform: uppercase;
+	list-style-type: none;
+	width: 67px;
+	border-radius: 3px;
+	padding: 10px 0px;
+	margin: 15px 0px 0px;
+}
+.menu-item:nth-child(2):hover .submenu {
+	display: block;
+}
+.submenu:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0px 4px 5px 4px;
+	border-color: transparent transparent #fff transparent;
+}
+.submenu:after {
+	content: '';
+	position: absolute;
+	width: 67px;
+	height: 85px;
+	top: -50px;
+	left: 0px;
+	overflow: hidden;
+}
+main {
+	min-height: 1170px;
+	background-color: #fff;
+	padding: 60px 60px 0px;
+	margin-bottom: 700px;
+}
+.slider {
+	position: relative;
+	width: 100%;
+	margin-bottom: 57px;
+}
+.slider img {
+	width: 100%;
+}
+.text-block-1 {
+	position: absolute;
+	left: 0;
+	top:50%;
+	transform: translateY(-99%);
+	text-transform: uppercase;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 22px;
+	color: #263555;
+	padding: 22px 20px;
+	background-color: #fff;
+}
+.text-block-2 {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	text-transform: uppercase;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 34px;
+	color: #fff;
+	padding: 15px 16px 17px 16px;
+	background-color: #38afe5;
+}
+.nav-button {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: #38afe5;
+	bottom: 40px;
+	left: 35px;
+	font-size: 20px;
+}
+.nav-button:before {
+	content: '\2190';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-150%, -50%);
+	color: #fff;
+}
+.nav-button:after {
+	content: '\2192';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(50%, -50%);
+	color: #fff;
+}
+.destinations h2 {
+	font-size: 30px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	color: #263555;
+	text-transform: uppercase;	
+	margin-bottom: 50px;
+}
+.destinations-list {
+	display: flex;
+	justify-content: space-between;
+}
+.destination-card {
+	overflow: hidden;
+	position: relative;
+	width: 280px;
+	height: 270px;
+}
+.card-1 {
+	background-color: #000;
+	background-image: url(../img/destination-card-1.jpg);
+	background-size: cover;
+}
+.card-2 {
+	background-color: #000;
+	background-image: url(../img/destination-card-2.jpg);
+	background-size: cover;
+}
+.card-3 {
+	background-color: #000;
+	background-image: url(../img/destination-card-3.jpg);
+	background-size: cover;
+}
+.destination-info h3,
+.destination-info p {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-size: inherit;
+	font-weight: inherit;
+	color: #fff;
+}
+.destination-info {
+
+	box-sizing: border-box;
+	position: relative;
+	width: 60%;
+	height: 100%;
+	background-color: #193149;
+	padding: 20px 10px; 
+	transition: all 0.2s;
+	transform: translateX(-100%);
+}
+.destination-card:hover .destination-info {
+	transform: translateX(0%);
+}
+
+.destination-info h3 {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.destination-info p {
+	font-family: 'Arial', sans-serif;
+	font-size: 10px;
+	text-align: justify;
+}
+.destination-info button {
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	background-color: #fff;
+}
+.to-top {
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #38afe5;
+}
+.to-top:after {
+	content: '\203A';
+	font-family: 'Arial';
+	display: block;
+	margin: auto;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	transform: translateX(-10%) rotate(-90deg);
+}
