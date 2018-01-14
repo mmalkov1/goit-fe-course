@@ -11,19 +11,19 @@ a {
 }
 h1,
 h2 {
-	padding: 0px;
-	margin: 0px;
+	padding:lg;
+	margin: 0;
 	font-size: inherit;
 	font-weight: inherit;
 }
 .wrapper {
 	width: 1024px;
 	margin: auto;
-	padding: 0px;
+	padding: 0;
 }
 header {
 	margin-bottom: 15px;
-	padding: 0px 60px;
+	padding: 0 60px;
 }
 .menu {
 	font-family: 'Pathway Gothic One', sans-serif;
@@ -36,11 +36,11 @@ header {
 	align-items: center;
 	justify-content: space-around;
 	min-height: 235px;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 .menu-item {
-	transition: all 0.2s linear;
+	transition: color 0.2s ease-in-out;
 	cursor: pointer;
 }
 .menu-item:nth-child(4) {
@@ -67,7 +67,7 @@ header {
 	
 }
 .submenu {
-	display: none;
+	
 	position: absolute;
 	background-color: #fff;
 	color: #6b7488;
@@ -76,11 +76,13 @@ header {
 	list-style-type: none;
 	width: 67px;
 	border-radius: 3px;
-	padding: 10px 0px;
-	margin: 15px 0px 0px;
+	padding: 10px 0;
+	margin: 15px 0 0;
+	transform: scaleY(0);
+	transition: transform 0.5s;
 }
 .menu-item:nth-child(2):hover .submenu {
-	display: block;
+	transform: scaleY(1);
 }
 .submenu:before {
 	content: '';
@@ -88,10 +90,10 @@ header {
 	top: -5px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 0px;
-	height: 0px;
+	width: 0;
+	height: 0;
 	border-style: solid;
-	border-width: 0px 4px 5px 4px;
+	border-width: 0 4px 5px 4px;
 	border-color: transparent transparent #fff transparent;
 }
 .submenu:after {
@@ -100,13 +102,13 @@ header {
 	width: 67px;
 	height: 85px;
 	top: -50px;
-	left: 0px;
+	left: 0;
 	overflow: hidden;
 }
 main {
 	min-height: 1170px;
 	background-color: #fff;
-	padding: 60px 60px 0px;
+	padding: 60px 60px 0;
 	margin-bottom: 700px;
 }
 .slider {
@@ -203,8 +205,8 @@ main {
 .destination-info h3,
 .destination-info p {
 	display: block;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	font-size: inherit;
 	font-weight: inherit;
 	color: #fff;
@@ -217,7 +219,7 @@ main {
 	height: 100%;
 	background-color: #193149;
 	padding: 20px 10px; 
-	transition: all 0.2s;
+	transition: transform 0.2s;
 	transform: translateX(-100%);
 }
 .destination-card:hover .destination-info {
