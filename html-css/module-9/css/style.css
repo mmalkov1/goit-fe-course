@@ -4,7 +4,6 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	-moz-background-size: cover;
 }
 a {
 	color: inherit;
@@ -172,6 +171,125 @@ main h5 {
 	display: none;
 }
 /*body content*/
+/*about-block*/
+.about {
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Arial, sans-serif;
+
+}
+.about h5 {
+	font-size: 14px;
+}
+.profile-block {
+	margin-bottom: 12%;
+}
+.profile-body img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 9%;
+}
+.profile-body h5 {
+	margin-bottom: 7%;
+}
+.profile-body p {
+
+}
+.profile-body > p {
+	display: none;
+}
+.principles-block {
+	border-bottom: 1px solid grey;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+.principles-block ol {
+	margin: 0px;
+	counter-reset: list;
+	font-size: 13px;
+}
+.principles-block li {
+	margin-bottom: 24px;
+	list-style: none;
+	position: relative;
+	counter-increment: list;
+}
+.principles-block li:last-child {
+	margin: 0px;
+}
+.principles-block ol > li:before {
+	content: counter(list);
+	width: 28px;
+	height: 28px;
+	border: 1px solid #4a94b5;
+	border-radius: 50%;
+	background-color: #38afe5;
+	position: absolute;
+	top: 0px;
+	left: -8%;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+}
+.offer-block {
+	margin-bottom: 14%;
+}
+.offer-block ul li {
+	position: relative;
+	list-style-type: none;
+	margin-top: 4%;
+	font-size: 12px;
+	color: #263555;
+}
+.offer-block ul li:before {
+	content: '\2192';
+	position: absolute;
+	left: -15px;
+	color: #38afe5;
+}
+.quote {
+	background: #fcfafa;
+	color: #263555;
+	padding: 2% 3%;
+	margin-bottom: 7%;
+	position: relative;
+	box-sizing: border-box;
+	border: 2px solid #dfdcdc;
+	border-radius: 3px;
+}
+.quote:after,
+.quote:before {
+	content: ''; 
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -31px;
+	border: 15px solid transparent;
+	border-top: 15px solid #dfdcdc;
+}
+.quote:after {
+	bottom: -28px;
+	border-top: 15px solid #fcfafa;
+}
+.guote_text:before {
+	content: "\201C";
+}
+.guote_text:after {
+	content: "\201D";
+}
+.author {
+	text-align: center;
+}
+.author > span {
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 15px;
+	color: #263555;
+}
+.author p {
+	font-size: 10px;
+}
+/*about-block*/
 /*footer*/
 footer {
 	text-align: center;
@@ -273,6 +391,9 @@ footer .privacy {
 	main h2 {
 		font-size: 28px;
 	}
+	.profile-block {
+		margin-bottom: 5%;
+	}
 	
 	.contact-phone:before {
 	content: url('../img/phone.png');
@@ -298,6 +419,38 @@ footer .privacy {
 	.contact-mail:before {
 		display: none;
 	}
+	.about {
+		font-size: 13px;
+	}
+	.principles-block li {
+		margin-bottom: 0;
+	}
+	.principles-body ol {
+		padding-left: 0;
+	}
+	.principles-block ol > li:before {
+		left: -12%;
+	}
+	.profile-body > p {
+		display: unset;
+	}
+	.offer-block {
+		margin-bottom: 0;
+	}
+	.quote {
+		margin-bottom: 32%;
+	}
+	.quote:after,
+	.quote:before {
+		bottom: -45px;
+		border: 15px solid transparent;
+		border-top: 30px solid #dfdcdc;
+	}
+	.quote:after {
+		bottom: -40px;
+		border-top: 30px solid #fcfafa;
+	}
+
 }
 @media only screen and (min-width: 769px) {
 	
@@ -349,6 +502,19 @@ footer .privacy {
 	}
 	.row-block {
 		font-size: 16px;
+	}
+	.principles-block {
+		border: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.upper-content {
+		border-bottom: 1px solid grey;
+		margin-bottom: 50px;
+		padding-bottom: 50px;
+	}
+	.quote {
+		padding: 6%;
 	}
 
 }
