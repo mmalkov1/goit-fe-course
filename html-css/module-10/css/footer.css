@@ -36,7 +36,12 @@
 	height: 40px;
 	margin: 25px 7px;
 }
-
+.footer__icon_path-white {
+	fill:#fffffe;
+}
+.footer__icon_path-yellow {
+	fill:#e4b264;
+}
 .footer__privacy {
 	display: block;
 	font-size: 12px;

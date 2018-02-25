@@ -61,9 +61,10 @@
 	opacity: 0;
 	transition: opacity 0.3s;
 }
-.gallery__zoom_element {
+.gallery__icon_zoom {
 	fill: grey;
 }
+
 .gallery__item-hide_sm {
 	display: none;
 }
