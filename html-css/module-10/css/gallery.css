@@ -15,7 +15,6 @@
 }
 
 .gallery__item {
-	display: block;
 	position: relative;
 	line-height: 12px;
 	margin-bottom: 4%;
@@ -65,18 +64,10 @@
 	fill: grey;
 }
 
-.gallery__item-hide_sm {
-	display: none;
-}
+
 @media only screen and (min-width: 576px) {
 	.gallery__item {
 		margin: 0 -15px 4%;
-	}
-	.gallery__item-hide_sm {
-		display: unset;
-	}
-	.gallery__item-hide_md {
-		display: none;
 	}
 }
 @media only screen and (min-width: 769px) {
@@ -91,8 +82,5 @@
 	}
 	.gallery__header {
 		margin-bottom: 45px;
-	}
-	.gallery__item-hide_md {
-		display: unset;
 	}
 }

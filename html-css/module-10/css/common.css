@@ -54,16 +54,29 @@ h2 {
 	    -ms-transform: translateX(-10%) rotate(-90deg);
 	        transform: translateX(-10%) rotate(-90deg);
 }
+.hidden-item_sm {
+	display: none;
+}
 @media only screen and (min-width: 480px) {
 	.wrapper {
 		max-width: 768px;
 	}
-	
 }
-
+@media only screen and (min-width: 576px) {
+	.hidden-item_sm {
+		display: block;
+	}
+	.hidden-item_md {
+		display: none;
+	}
+}
 @media only screen and (min-width: 769px) {
-	
 	.wrapper {
 		max-width: 1024px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.hidden-item_md {
+		display: block;
 	}
 }
